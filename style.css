@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 600px;
+  height: 100vh;
+  width: 100%;
+  background-color: #000000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skillLevelUpGif {
+  top: 10px;
+  z-index: 10;
+  position: absolute;
+  width: 450px;
+  height: 243px;
+  opacity: 1;
+  display: none;
+  transition: 400ms;
+  border-radius: 10px;
+}
+
+.container {
+  padding: 10px;
+  position: absolute;
+  width: 450px;
+  height: 550px;
+  background-color: rgba(0, 0, 0,0.7);
+  display: flex;
+  flex-direction: column;
+  flex-direction: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 3px solid rgb(88, 191, 250);
+  box-shadow: 0 10px 10px #000000;
+  gap: 10px;
+  bottom: 15px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 16px;
+}
+
+.page-logo {
+  width: 350px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  outline: none;
+  width: 60px;
+  height: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 5px;
+}
+
+button {
+    font-size: 2rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgb(88, 191, 250);
+    border: 2px solid black;
+    border-radius: 5px;
+    border: 2px solid white;
+    transition: 400ms;
+  }
+
+button:hover {
+    background-color: rgb(49, 151, 209);
+    border: 2px solid rgb(194, 188, 188);
+}
+
+
+.resultado {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 130px;
+  height: 130px;
+  border-radius: 130px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px black;
+  color: rgb(255, 255, 255);
+  border: 3px solid white;
+  display: none;
+
+}
+
+#dica {
+  font-size: 1.7rem;
+  color: rgb(255, 102, 0);
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.397);
+  display: none;
+}
+
+#tentativa {
+  font-size: 1.7rem;
+  color: rgb(255, 102, 0);
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.397);
+  display: none;
+}
